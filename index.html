@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Don Viper</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <nav>
+      <h1 class="logo">DonViper</h1>
+
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#music">Music</a></li>
+        <li><a href="#shows">Shows</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero">
+      <div class="hero-text">
+        <p class="tag">AFRO FUSION • HIP HOP • LIVE ENERGY</p>
+
+        <h2>DONVIPER</h2>
+
+        <p class="description">
+          DonViper blends raw storytelling with futuristic Afro sounds,
+          creating unforgettable performances and emotionally charged music.
+        </p>
+
+        <div class="buttons">
+          <button id="streamBtn">Stream Music</button>
+          <button class="outline">Book Artist</button>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1200&auto=format&fit=crop" alt="DonViper">
+      </div>
+    </div>
+  </header>
+
+  <section id="about" class="section">
+    <div class="about-container">
+      <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=1200&auto=format&fit=crop" alt="Studio">
+
+      <div>
+        <h3>About DonViper</h3>
+
+        <p>
+          From underground freestyle battles to headline performances,
+          DonViper has built a reputation for fearless creativity and a sound
+          that fuses Afrobeat rhythms with hip hop intensity.
+        </p>
+
+        <p>
+          Every release tells a story — ambition, nightlife, passion,
+          and the relentless pursuit of greatness.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="music" class="section dark">
+    <h3 class="section-title">Popular Tracks</h3>
+
+    <div class="cards">
+
+      <div class="card">
+        <img src="https://picsum.photos/400?1" alt="Track">
+
+        <div class="card-content">
+          <h4>Midnight Waves</h4>
+          <p>Single • 2026</p>
+          <button>Listen Now</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://picsum.photos/400?2" alt="Track">
+
+        <div class="card-content">
+          <h4>Street Echoes</h4>
+          <p>Single • 2025</p>
+          <button>Listen Now</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://picsum.photos/400?3" alt="Track">
+
+        <div class="card-content">
+          <h4>Fire Inside</h4>
+          <p>Single • 2025</p>
+          <button>Listen Now</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="shows" class="section">
+    <h3 class="section-title">Upcoming Shows</h3>
+
+    <div class="shows">
+
+      <div class="show">
+        <div>
+          <h4>Kampala</h4>
+          <p>Sky Lounge</p>
+        </div>
+
+        <span>June 14, 2026</span>
+
+        <button>Tickets</button>
+      </div>
+
+      <div class="show">
+        <div>
+          <h4>Nairobi</h4>
+          <p>Pulse Arena</p>
+        </div>
+
+        <span>July 02, 2026</span>
+
+        <button>Tickets</button>
+      </div>
+
+      <div class="show">
+        <div>
+          <h4>Kigali</h4>
+          <p>Night Vibe Hall</p>
+        </div>
+
+        <span>August 11, 2026</span>
+
+        <button>Tickets</button>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h3>Connect With DonViper</h3>
+
+    <p>
+      For bookings, interviews and collaborations reach out through the official channels.
+    </p>
+
+    <div class="contact-buttons">
+      <button>Email</button>
+      <button>Instagram</button>
+      <button>YouTube</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 DonViper. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+```
+
+---
+
+## style.css
+
+```css
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #000;
+  color: white;
+}
+
+header {
+  min-height: 100vh;
+  padding: 30px 8%;
+  background: linear-gradient(to bottom right, #1d0036, #000000);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.logo {
+  font-size: 32px;
+  color: #b56dff;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.tag {
+  color: #c89cff;
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+}
+
+.hero-text h2 {
+  font-size: 90px;
+  margin-bottom: 20px;
+}
+
+.description {
+  color: #cccccc;
+  max-width: 550px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+button {
+  padding: 14px 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+button:first-child {
+  background: #8c38ff;
+  color: white;
+}
+
+.outline {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.hero-image img {
+  width: 350px;
+  border-radius: 30px;
+}
+
+.section {
+  padding: 100px 8%;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.about-container img {
+  width: 400px;
+  border-radius: 20px;
+}
+
+.about-container div {
+  flex: 1;
+}
+
+.about-container h3,
+.section-title,
+.contact h3 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.about-container p {
+  color: #cccccc;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.dark {
+  background: #0f0f0f;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: #161616;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h4 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  color: #bbbbbb;
+  margin-bottom: 20px;
+}
+
+.shows {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.show {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111111;
+  padding: 25px;
+  border-radius: 20px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.show h4 {
+  font-size: 28px;
+}
+
+.show p,
+.show span {
+  color: #cccccc;
+}
+
+.contact {
+  padding: 100px 8%;
+  text-align: center;
+  background: linear-gradient(to right, #3d006e, #240022);
+}
+
+.contact p {
+  max-width: 700px;
+  margin: auto;
+  color: #dddddd;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #888888;
+}
+
+@media (max-width: 900px) {
+
+  .hero-text h2 {
+    font-size: 60px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .hero-image img,
+  .about-container img {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+```
+
+---
+
+## script.js
+
+```javascript
+const streamBtn = document.getElementById("streamBtn");
+
+streamBtn.addEventListener("click", () => {
+  alert("Streaming platforms coming soon for DonViper!");
+});
+
+const buttons = document.querySelectorAll("button");
+
+buttons.forEach(button => {
+  button.addEventListener("mouseenter", () => {
+    button.style.opacity = "0.9";
+  });
+
+  button.addEventListener("mouseleave", () => {
+    button.style.opacity = "1";
+  });
+});
+```
